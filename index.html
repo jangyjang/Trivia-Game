@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+  	<title>Super Trivia</title>
+  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Monoton|Philosopher" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="container">
+	<div class=row> <!--row1 starts here-->
+		<div class="col-xs-12 col-sm-12 col-md-12"> 
+  			<h1 id="header">S.E.A. Super Trivia</h1>
+		</div>
+	</div><!--row1 ends here-->
+
+	<div class=row> <!--row2 starts here-->
+		<div class="col-xs-12 col-sm-12 col-md-12"> 
+  			<h3 id="tagline">Let's test how much you know about Southeast Asia!</h3>
+		</div>
+	</div><!--row2 ends here-->
+
+	<div class=row> <!--row3 starts here-->
+		<div class="col-xs-12 col-sm-12 col-md-12"> 
+  			<p id="timer">Time Remaining</p>
+		</div>
+	</div><!--row3 ends here-->
+	
+	<div class=row> <!--row4 starts here-->
+		<div class="col-xs-12 col-sm-12 col-md-12"> 
+  			<h2 id="question"></h2>
+		</div>
+	</div><!--row4 ends here-->
+
+
+	<div id="row5" class=row> <!--row5 starts here-->
+		<div class="col-xs-12 col-sm-12 col-md-12"> 
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<a id="one" class="btn btn-primary center-block" role="button">Choice 1</a>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 col-md-6">
+					<a id="two" class="btn btn-primary center-block" role="button">Choice 2</a>
+  				</div>
+  			</div>
+		</div>
+	</div><!--row5 ends here-->
+	<div id="wrapper">	
+		<div id="placeholder1"></div>
+		<div id="placeholder2"></div>
+		<div id="placeholder3"></div>
+	</div>
+	<div id="row6" class=row> <!--row6 starts here-->
+		<div class="col-xs-12 col-sm-12 col-md-12"> 
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<a id="three" class="btn btn-primary center-block" role="button">Choice 3</a>
+  				</div>
+  				<div class="col-xs-6 col-sm-6 col-md-6">
+					<a id="four" class="btn btn-primary center-block" role="button">Choice 4</a>
+  				</div>
+  			</div>
+		</div>
+	</div><!--row6 ends here-->
+	<div>
+		<a id="restart" class="btn btn-lg center-block" role="button">RESTART</a>
+  	</div>
+</div><!--container ends here -->
+
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+<script src="assets/javascript/questions.js"></script>
+</body>
+</html>

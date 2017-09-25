@@ -1,0 +1,69 @@
+.container{
+	background-image: url(../images/background.jpg)
+}
+
+#header{
+	text-align: center;
+	font-family: 'Monoton', cursive;
+	font-weight: bold;
+}
+
+#tagline{
+	text-align: center;
+	font-weight: lighter;
+	font-family: 'Comfortaa', cursive;
+}
+
+#timer {
+	text-align: right;
+	margin: 5% auto 0 auto;
+	font-family: 'Comfortaa', cursive;
+	font-size: 125%
+
+}
+#question {
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold; 
+}
+
+#row5 {
+	margin: 2% auto;
+	width: auto;
+	height: auto;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	font-size: 300%%
+}
+#win {
+	width: 50%;
+	margin: 5% auto;
+	text-align: center;
+
+}
+#placeholder1, #placeholder2, #placeholder3{
+	font-family: 'Comfortaa', cursive;
+	font-size: 300%;
+	text-align: center;
+
+}
+
+#row6{
+	margin: 2% auto;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	font-size: 300%%
+}
+
+#one, #two, #three, #four{
+	background-color: #292a85;
+}
+
+}
+
+#restart{
+	width: 20%;
+	float: right;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+}
