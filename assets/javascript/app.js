@@ -16,14 +16,15 @@ var restartButton = [];
 //set up start page
 $(".btn").hide();
 $("#timer").hide();
-$("#question").text("Start Game").css("border","solid", "black", "1px").css("cursor", "pointer");
+$("#startgame").text("Start Game").css("border","solid", "black", "1px").css("cursor", "pointer");
 $("#restart").hide();
 
 //set up  what happens when start button is clicked
-$("#question").on("click", function(){
+$("#startgame").on("click", function(){
 	$(".btn").show();
 	$("#timer").show();
-	loadQuestion(questionCount)
+	$("#startgame").hide();
+	loadQuestion(questionCount);
 });
 
 
@@ -73,7 +74,7 @@ function loadQuestion (questionIndex){
 			console.log('unanswer ' + unanswered);
 			clearInterval(counter);
 			$("#question").text("Time's up! The answer is " + gameQuestions[questionIndex].correctAns + ".");
-			$("#placeholder1").show().html('<img id="win" src="assets/images/catbread.jpg"/>').css("text-align","center");
+			$("#placeholder1").show().html('<img id="win" src="assets/images/catbread.gif"/>').css("text-align","center");
 			$("#row5").hide();
 			$("#row6").hide();
 			setTimeout(summary, 2000);
@@ -152,6 +153,7 @@ function loadnextQuestion (){
 //this is the summary function that will be called when questionCount = totalQuestion
 function summary (){
 	$("#question").text("Here is your summary:").css("border-bottom","2px solid black")
+	
 	$("#timer").hide();
 	$("#placeholder1").show().html("<h3>You answered " + answerCorrectly + " questions right.");
 	$("#placeholder2").show().html("<h3>You answered " + answerIncorrectly + " questions wrong.");

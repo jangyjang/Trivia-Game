@@ -17,7 +17,7 @@ var gameQuestions = [
 	},
 
 	{ 
-		question: "Which country is a landlock country?",
+		question: "Which country is a landlocked country?",
 		choice1: "Vietnam",
 		choice2: "Cambodia",
 		choice3: "Laos",
@@ -80,7 +80,7 @@ var gameQuestions = [
 	},
 
 	{ 
-		question: "Timor Leste is the newest country in Southeast Asia. Which country did it seperate from?",
+		question: "Timor-Leste is the newest country in Southeast Asia. Which country did it seperate from?",
 		choice1: "Indonesia",
 		choice2: "Singapore",
 		choice3: "Malaysia",
