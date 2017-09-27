@@ -171,6 +171,7 @@ function restart(){
 	$("#row5").show();
 	$("#row6").show();
 	$("#timer").show();
+	$("#questionNum").show();
 	questionCount = 0;
 	answerCorrectly =0;
 	answerIncorrectly= 0;
