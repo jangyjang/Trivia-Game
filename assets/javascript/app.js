@@ -38,6 +38,7 @@ function loadQuestion (questionIndex){
 	questionObj = gameQuestions[questionIndex];
 	questionCount++;
 	console.log("question no. " + questionCount)
+	$("#questionNum").text("Question " + questionCount+ "/10");
 	$("#restart").hide();
 	$("#question").text(questionObj.question).css("border","none").css("cursor","initial")
 	$("#one").text(questionObj.choice1);
@@ -152,9 +153,9 @@ function loadnextQuestion (){
 
 //this is the summary function that will be called when questionCount = totalQuestion
 function summary (){
-	$("#question").text("Here is your summary:").css("border-bottom","2px solid black")
-	
+	$("#question").text("Here is your summary:").css("border-bottom","2px solid black").css("margin-top", "50px")
 	$("#timer").hide();
+	$("#questionNum").hide();
 	$("#placeholder1").show().html("<h3>You answered " + answerCorrectly + " questions right.");
 	$("#placeholder2").show().html("<h3>You answered " + answerIncorrectly + " questions wrong.");
 	$("#placeholder3").show().html("<h3>You didn't answer " + unanswered + " questions");
